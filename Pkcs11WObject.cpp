@@ -13,13 +13,12 @@ void Pkcs11WObject::setClass(CK_OBJECT_CLASS c)
 
 CK_ATTRIBUTE Pkcs11WObject::getCKAttribute(CK_ATTRIBUTE_TYPE attr_type)
 {
-	CK_ATTRIBUTE attr;
 	if (attr_type == CKA_CLASS)
 	{
-		attr = {CKA_CLASS, &classs, sizeof(classs)};
+		CK_ATTRIBUTE attr = {CKA_CLASS, &classs, sizeof(classs)};
 		return attr;
 	}
-	attr = {attr_type, NULL_PTR, 0};
+	CK_ATTRIBUTE attr = {attr_type, NULL_PTR, 0};
 	return attr;
 }
 

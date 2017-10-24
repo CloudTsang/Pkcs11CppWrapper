@@ -3,8 +3,6 @@
 
 #include "Pkcs11W.h"
 
-
-
 class Pkcs11WObject
 {
 	private:

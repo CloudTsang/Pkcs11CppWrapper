@@ -15,10 +15,10 @@
 #define CK_CALLBACK_FUNCTION(returnType, name) returnType (* name)
 #ifndef NULL_PTR
 #define NULL_PTR 0
-
+#endif
 #define CKF_DONT_BLOCK 1
 
-#endif
+
 
 #include "pkcs11.h"
 
